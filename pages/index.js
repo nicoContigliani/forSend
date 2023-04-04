@@ -13,6 +13,11 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const [goodSend, setGoodSend] = useState(false)
+  if (goodSend) {
+    setTimeout(() => {
+      setGoodSend(false)
+    }, 10000);
+  }
 
   // Handles the submit event on form submit.
   const handleSubmit = async (event) => {

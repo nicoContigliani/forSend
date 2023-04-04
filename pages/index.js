@@ -16,7 +16,7 @@ export default function Home() {
   if (goodSend) {
     setTimeout(() => {
       setGoodSend(false)
-    }, 10000);
+    }, 5000);
   }
 
   // Handles the submit event on form submit.
